@@ -38,18 +38,18 @@ http://www.tooplate.com/view/2093-flight
                 <div class="col-md-5">
                     <div class="left-side">
                         <div class="logo">
-                           <h2 style="color:white; font-weight:bold;">Vuelos</h2>
+                            <img src="img/logo.png" alt="Flight Template">
                         </div>
                         <div class="tabs-content">
-                            <h4>Los destinos más concurridos</h4>
+                            <h4>Los destinos más concurridos:</h4>
                             <ul class="social-links">
-                              <p>Buenos Aires, Aeroparque Jorge Newbery</p>
-                              <p>Córdoba, Aeropuerto Internacional</p>
-                              <p>Mendoza, El Plumerillo</p>
+                                <li><p>Buenos Aires</p></li>
+                                <li><p>Rio Negro</p></li>
+                                <li><p>Cordoba</p></li>
                             </ul>
                         </div>
                         <div class="page-direction-button">
-                        <a href="contact.html"><i class="fa fa-phone"></i>Contáctenos</a>
+                            <a href="contact.html"><i class="fa fa-phone"></i>Contáctenos</a>
                         </div>
                     </div>
                 </div>
@@ -57,43 +57,48 @@ http://www.tooplate.com/view/2093-flight
                     <section id="first-tab-group" class="tabgroup">
                         <div id="tab1">
                             <div class="submit-form">
-                                <h4>Seleccionar Destino</h4>
+                                <h4>Seleccionar <em>destino</em>:</h4>
                                 <form id="form-submit" action="" method="get">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <fieldset>
-                                               <label for="from">Desde:</label>
+                                                <label for="from">Desde:</label>
                                                 <select required name='from' onchange='this.form.()'>
-                                                    <option value="ALL">Río Negro, Allen</option>
-                                                    <option value="AEP">Buenos Aires, Aeroparque Jorge Newbery</option>
-                                                    <option value="COR">Córdoba, Aeropuerto Internacional Ingeniero Ambrosio Taravella</option>
-                                                    <option value="MDZ">Mendoza, Aeropuerto Internacional El Plumerillo</option>
-                                                   <option value="NQN">Neuquén, Presidente Perón</option>
-                                                  <option value="USH">Tierra del Fuego, Ushuaia</option>
+                                                    <option value="ALL">Allen, Rio Negro</option>
+                                                    <option value="ALL">Bahía Blanca, Buenos Aires</option>
+                                                    <option value="ALL">Bariloche, Rio Negro</option>
+                                                    <option value="ALL">Bolíbar, Buenos Aires</option>
+                                                    <option value="ALL">CABA, Buenos Aires</option>
+                                                    <option value="ALL">Caviahue, Neuquén</option>
+                                                    <option value="ALL">Ceres, Santa Fe</option>
+                                                    <option value="ALL">Chemical, La Rioja</option>
+                                                    <option value="ALL">Chilecito, La Rioja</option>
+                                                    <option value="ALL">Casilda, Santa Fe</option>
+                                                    <option value="ALL">Catriel, Rio Negro</option>
                                                 </select>
                                             </fieldset>
                                         </div>
                                         <div class="col-md-6">
                                             <fieldset>
-                                                <label for="to">Hasta:</label>
+                                                <label for="to">Hacia:</label>
                                                 <select required name='to' onchange='this.form.()'>
-                                                    <option value="">Select a location...</option>
-                                                    <option value="Cambodia">Cambodia</option>
-                                                    <option value="Hong Kong">Hong Kong</option>
-                                                    <option value="India">India</option>
-                                                    <option value="Japan">Japan</option>
-                                                    <option value="Korea">Korea</option>
-                                                    <option value="Laos">Laos</option>
-                                                    <option value="Myanmar">Myanmar</option>
-                                                    <option value="Singapore">Singapore</option>
-                                                    <option value="Thailand">Thailand</option>
-                                                    <option value="Vietnam">Vietnam</option>
+                                                    <option value="ALL">Allen, Rio Negro</option>
+                                                    <option value="ALL">Bahía Blanca, Buenos Aires</option>
+                                                    <option value="ALL">Bariloche, Rio Negro</option>
+                                                    <option value="ALL">Bolíbar, Buenos Aires</option>
+                                                    <option value="ALL">CABA, Buenos Aires</option>
+                                                    <option value="ALL">Caviahue, Neuquén</option>
+                                                    <option value="ALL">Ceres, Santa Fe</option>
+                                                    <option value="ALL">Chemical, La Rioja</option>
+                                                    <option value="ALL">Chilecito, La Rioja</option>
+                                                    <option value="ALL">Casilda, Santa Fe</option>
+                                                    <option value="ALL">Catriel, Rio Negro</option>
                                                 </select>
                                             </fieldset>
                                         </div>
                                         <div class="col-md-6">
                                             <fieldset>
-                                               <label for="departure">Fecha de salida:</label>
+                                                <label for="departure">Fecha de salida:</label>
                                                 <input name="deparure" type="text" class="form-control date" id="deparure" placeholder="Select date..." required="" onchange='this.form.()'>
                                             </fieldset>
                                         </div>
@@ -107,11 +112,11 @@ http://www.tooplate.com/view/2093-flight
                                             <div class="radio-select">
                                                 <div class="row">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-                                                       <label for="round">Ida y Vuelta</label>
+                                                        <label for="round">Ida y Vuelta</label>
                                                         <input type="radio" name="trip" id="round" value="round" required="required"onchange='this.form.()'>
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-                                                       <label for="oneway">Ida</label>
+                                                        <label for="oneway">Ida</label>
                                                         <input type="radio" name="trip" id="oneway" value="one-way" required="required"onchange='this.form.()'>
                                                     </div>
                                                 </div>
@@ -119,7 +124,7 @@ http://www.tooplate.com/view/2093-flight
                                         </div>
                                         <div class="col-md-6">
                                             <fieldset>
-                                             <button type="submit" id="form-submit" class="btn">Comprar</button>
+                                                <button type="submit" id="form-submit" class="btn">Comprar</button>
                                             </fieldset>
                                         </div>
                                     </div>
@@ -161,26 +166,26 @@ http://www.tooplate.com/view/2093-flight
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>Myanmar</h6>
+                                                        <h6>Buenos Aires</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-03.png" alt="">
                                                         </div>
-                                                        <span>32&deg;C</span>
+                                                        <span>17&deg;C</span>
                                                         <ul class="time-weather">
-                                                            <li>6AM <span>26&deg;</span></li>
-                                                            <li>12PM <span>32&deg;</span></li>
-                                                            <li>6PM <span>28&deg;</span></li>
-                                                            <li>12AM <span>22&deg;</span></li>
+                                                            <li>6AM <span>8&deg;</span></li>
+                                                            <li>12PM <span>12&deg;</span></li>
+                                                            <li>6PM <span>16&deg;</span></li>
+                                                            <li>12AM <span>13&deg;</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>Thailand</h6>
+                                                        <h6>Rio Negro</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-02.png" alt="">
                                                         </div>
-                                                        <span>28&deg;C</span>
+                                                        <span>17&deg;C</span>
                                                         <ul class="time-weather">
                                                             <li>6AM <span>20&deg;</span></li>
                                                             <li>12PM <span>28&deg;</span></li>
@@ -191,11 +196,11 @@ http://www.tooplate.com/view/2093-flight
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>India</h6>
+                                                        <h6>Bahia Blanca</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-01.png" alt="">
                                                         </div>
-                                                        <span>33&deg;C</span>
+                                                        <span>16&deg;C</span>
                                                         <ul class="time-weather">
                                                             <li>6AM <span>26&deg;</span></li>
                                                             <li>12PM <span>33&deg;</span></li>
@@ -210,22 +215,22 @@ http://www.tooplate.com/view/2093-flight
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>Myanmar</h6>
+                                                        <h6>Buenos Aires</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-02.png" alt="">
                                                         </div>
                                                         <span>28&deg;C</span>
                                                         <ul class="time-weather">
-                                                            <li>6AM <span>18&deg;</span></li>
-                                                            <li>12PM <span>27&deg;</span></li>
-                                                            <li>6PM <span>25&deg;</span></li>
-                                                            <li>12AM <span>17&deg;</span></li>
+                                                            <li>6AM <span>11&deg;</span></li>
+                                                            <li>12PM <span>13&deg;</span></li>
+                                                            <li>6PM <span>17&deg;</span></li>
+                                                            <li>12AM <span>14&deg;</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>Thailand</h6>
+                                                        <h6>Rio Negro</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-03.png" alt="">
                                                         </div>
@@ -240,7 +245,7 @@ http://www.tooplate.com/view/2093-flight
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>India</h6>
+                                                        <h6>Bahia Blanca</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-01.png" alt="">
                                                         </div>
@@ -259,22 +264,22 @@ http://www.tooplate.com/view/2093-flight
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>Myanmar</h6>
+                                                        <h6>Buenos Aires</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-03.png" alt="">
                                                         </div>
                                                         <span>31&deg;C</span>
                                                         <ul class="time-weather">
-                                                            <li>6AM <span>19&deg;</span></li>
-                                                            <li>12PM <span>28&deg;</span></li>
-                                                            <li>6PM <span>22&deg;</span></li>
-                                                            <li>12AM <span>18&deg;</span></li>
+                                                            <li>6AM <span>12&deg;</span></li>
+                                                            <li>12PM <span>13&deg;</span></li>
+                                                            <li>6PM <span>15&deg;</span></li>
+                                                            <li>12AM <span>11&deg;</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>Thailand</h6>
+                                                        <h6>Rio Negro</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-01.png" alt="">
                                                         </div>
@@ -289,7 +294,7 @@ http://www.tooplate.com/view/2093-flight
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>India</h6>
+                                                        <h6>Bahia Blanca</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-02.png" alt="">
                                                         </div>
@@ -308,7 +313,7 @@ http://www.tooplate.com/view/2093-flight
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>Myanmar</h6>
+                                                        <h6>Buenos Aires</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-01.png" alt="">
                                                         </div>
@@ -323,7 +328,7 @@ http://www.tooplate.com/view/2093-flight
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>Thailand</h6>
+                                                        <h6>Rio Negro</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-02.png" alt="">
                                                         </div>
@@ -338,7 +343,7 @@ http://www.tooplate.com/view/2093-flight
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>India</h6>
+                                                        <h6>Bahia Blanca</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-03.png" alt="">
                                                         </div>
@@ -357,7 +362,7 @@ http://www.tooplate.com/view/2093-flight
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>Myanmar</h6>
+                                                        <h6>Buenos Aires</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-03.png" alt="">
                                                         </div>
@@ -372,7 +377,7 @@ http://www.tooplate.com/view/2093-flight
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>Thailand</h6>
+                                                        <h6>Rio Negro</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-02.png" alt="">
                                                         </div>
@@ -387,7 +392,7 @@ http://www.tooplate.com/view/2093-flight
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="weather-item">
-                                                        <h6>India</h6>
+                                                        <h6>Bahia Blanca</h6>
                                                         <div class="weather-icon">
                                                             <img src="img/weather-icon-01.png" alt="">
                                                         </div>
